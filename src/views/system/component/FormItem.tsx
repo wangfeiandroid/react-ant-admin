@@ -18,6 +18,7 @@ export interface FormInputItemProps {
 function FormInputItem(props: FormInputItemProps) {
   const [count, beginTimer, closeTimer] = useCount(COUNT_STATIC);
 
+  // 点击之后进行验证
   const onTimerClick = () => {
     if (props.onGetMobileCode) {
       props.onGetMobileCode(() => {

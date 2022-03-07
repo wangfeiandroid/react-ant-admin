@@ -78,6 +78,7 @@ const config: { [key in keyof LoginItemType]: LoginItemConfig } = {
 };
 
 const formProps: FormItemProps = {
+  // 用于展示验证图标
   hasFeedback: true,
   children: null,
 };
